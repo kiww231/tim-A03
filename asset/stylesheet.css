@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(banner_dua.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.7;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.7;
+  margin-bottom: 3px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(255 255 255 / 90%);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  color: #000a06;
+  margin-top: 14px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+/*Button Menu dan Sedikit Animated*/
+.buttonMenu {
+  display: block;
+  background-color: #f38704;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 15px;
+  padding: 0 25px;
+  transition: all 0.5s;
+  cursor: pointer;
+  line-height: 65px;
+  float: left;
+
+}
+
+.buttonMenu span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonMenu span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonMenu:hover span {
+  padding-right: 25px;
+}
+
+.buttonMenu:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*Button Menu dan Sedikit Animated*/
+
+
+
+/*mode smartphone*/
+@media all and (max-width: 670px) {
+
+  .buttonMenu {
+    display: block;
+    background-color: #f38704;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+    line-height: 65px;
+    float: left;
+
+  }
+  .logo {
+    color: #000a06;
+    margin: 22px;
+    font-size: 15px;
+  }
+
+}
+/*mode smartphone*/
